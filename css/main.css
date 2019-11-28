@@ -238,7 +238,14 @@ a {
     font-size: 16px;
     position: absolute;
     left: 15px;
-    top: 2.5rem;
+    top: 1.5rem;
+  }
+  .btn {
+    border: 1.5px solid #fff;
+    border-radius: 7px;
+    padding: 6px 6px;
+    margin-right: -25px;
+    transition: all 0.3s ease-in-out;
   }
 }
 @media only screen and (min-width: 760px) {
