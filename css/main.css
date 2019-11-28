@@ -217,8 +217,31 @@ a {
   font-size: 0.6rem;
   margin-bottom: 3rem;
 }
-
-@media (min-width: 760px) {
+@media only screen and (min-width: 320px){
+  .hero-text h2 {
+    font-size: 12px;
+    position: absolute;
+    left: 15px;
+    top: 2.5rem;
+  }
+}
+@media only screen and (min-width: 360px){
+  .hero-text h2 {
+    font-size: 15px;
+    position: absolute;
+    left: 15px;
+    top: 2.5rem;
+  }
+}
+@media only screen and (min-width: 375px){
+  .hero-text h2 {
+    font-size: 16px;
+    position: absolute;
+    left: 15px;
+    top: 2.5rem;
+  }
+}
+@media only screen and (min-width: 760px) {
   .btn {
     border: 1.5px solid #fff;
     border-radius: 0.75rem;
@@ -258,7 +281,7 @@ a {
   }
 }
 
-@media (min-width: 1126px) {
+@media only screen and (min-width: 1126px) {
   .sky,
   .bushes,
   .water,
@@ -268,14 +291,14 @@ a {
   .hero-text {
     background-size: contain;
   }
-}
-.btn {
+
+  .btn {
   border: 1.5px solid #fff;
   border-radius: 0.75rem;
   padding: 0.75rem 1.25rem;
-  transition: all 0.3s ease-in-out;
-}
-.modal{
+  transition: all 0.3s ease-in-out; 
+  }
+  .modal{
   z-index: 1;
   display: none;
   position: fixed;
@@ -288,29 +311,30 @@ a {
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.2); 
-}
-.modal-content {
+  }
+  .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 2px solid #888;
   width: 80%;
-}
-.close {
+  }
+  .close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
-}
-.close:hover,
-.close:focus {
+  }
+  .close:hover,
+  .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-.hero-text h2 {
+  }
+  .hero-text h2 {
   font-size: 1.25rem;
   position: absolute;
   left: 2.5rem;
   top: 2.5rem;
+  }
 }
