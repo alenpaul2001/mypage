@@ -345,3 +345,19 @@ a {
   top: 2.5rem;
   }
 }
+.terminal {
+  position: absolute;
+  width: 30%;
+  height:60px;
+  bottom: 27px;
+  right: 35px;
+  color:beige;
+  font-family: Inconsolata,monospace;
+  font-size: 14px;
+}
+#typedtext {
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: -27px;
+  width: 260px;
+}

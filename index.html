@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>2019</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -11,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body onload="typewriter();">
     <div class="wrapper">
       <div class="parallax__group hero-container">
         <div class="parallax__layer sky"></div>
@@ -47,6 +48,10 @@
               ><i class="icon ion-logo-youtube"></i
             ></a>
           </div>
+          <div class="terminal">
+            <div id="typedtext"></div>
+            <div id="typedtext2"></div>
+          </div>
         </div>
       </div>
       <div class="parallax__group info-container">
@@ -62,3 +67,40 @@
     </div>
   </body>
 </html>
+<script>
+var aText = new Array(
+    "########################",
+    "Thanks For Visiting Here",
+    "############-AlenPaulVarghese",
+    );
+    var iSpeed = 100; 
+    var iIndex = 0; 
+    var iArrLength = aText[0].length; 
+    var iScrollAt = 20; 
+     
+    var iTextPos = 0; 
+    var sContents = ''; 
+    var iRow; 
+     
+    function typewriter()
+    {
+     sContents =  ' ';
+     iRow = Math.max(0, iIndex-iScrollAt);
+     var destination = document.getElementById("typedtext");
+     
+     while ( iRow < iIndex ) {
+      sContents += aText[iRow++] + '<br />';
+     }
+     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+     if ( iTextPos++ == iArrLength ) {
+      iTextPos = 0;
+      iIndex++;
+      if ( iIndex != aText.length ) {
+       iArrLength = aText[iIndex].length;
+       setTimeout("typewriter()", 500);
+      }
+     } else {
+      setTimeout("typewriter()", iSpeed);
+     }
+    }
+</script>
