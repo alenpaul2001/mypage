@@ -347,8 +347,8 @@ a {
 }
 .terminal {
   position: absolute;
-  width: 30%;
-  height:60px;
+  width: 19%;
+  height:54px;
   bottom: 27px;
   right: 35px;
   color:beige;
@@ -360,4 +360,9 @@ a {
   margin-left: auto;
   margin-right: -27px;
   width: 260px;
+}
+#typedtext1{
+  margin-left: auto;
+  margin-right: 0;
+  width: 146px;
 }
